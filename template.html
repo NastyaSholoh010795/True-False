@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,height=device-height,user-scalable=no, initial-scale=1.0">
+    <title>Правда или ложь</title>
+
+    <!--favicon-->
+    <link rel="icon" type="image/vnd.microsoft.icon" href="img/faviconTrue&False.ico">
+    <link rel="SHORTCUT ICON" href="img/faviconTrue&False.ico">
+
+
+    <link rel="stylesheet" href="plugins/bootstrap-4.0.0/css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <header class="bg-img">
+        <div class="row m-0 pt-5">
+            <div class="col-md-4 text-center col-4">
+                <p class="text-white fz-18 z-index-5">
+                    <i class="fa fa-heart red-text fz-24"></i>
+                    <span class="lives">6</span>/6 жизней
+                </p>
+            </div>
+            <div class="col-md-4 text-center col-4">
+                <div class="answer">
+                    <p class="text-white fz-18 z-index-5">
+                        <i class="fa fa-check-square-o green-text fz-24"></i>
+                        <span class="true-answers">0</span>/9 правильних ответов
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 text-center col-4">
+                <div class="level">
+                    <p class="text-white fz-18 z-index-5">
+                        <i class="fa fa-star yellow-text fz-24"></i>
+                        <span class="level-num">1</span> Уровень
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-img section-min-height pb-footer">
+        <ul class="buttons-about-game">
+            <li class="fixed-btn-wrapper">
+                <button class="btn btn-dark btn-lg fixed-btn" data-toggle="popover" data-trigger="focus"
+                        title="Правила игры" data-container="body"
+                        data-content="Вам будут задавать вопросы и вы должны отвечать правда или ложь это.">
+                    <i class="fa fa-list-ul fz-24"></i>
+                </button>
+            </li>
+            <li class="fixed-btn-wrapper">
+                <button class="btn btn-danger btn-lg fixed-btn" data-toggle="popover" data-trigger="focus"
+                        title="О игре" data-container="body"
+                        data-content="Эта игра розвивает мышление и тринерует вашу память, вы узнаете много нового и интересного.">
+                    <i class="fa fa-info-circle fz-24"></i>
+                </button>
+            </li>
+            <li>
+                <a href="index.html" class="btn btn-success transition-link btn-lg fixed-btn"
+                   data-toggle="popover"
+                   data-trigger="focus"
+                   data-container="body" title="Заново"
+                   data-content="Все даные будут утеряны, вы вернетесь в начало игры.">
+                    <i class="fa fa-rotate-left fz-24"></i>
+                </a>
+            </li>
+        </ul>
+
+        <div class="question-box questions-wrapper clearfix">
+            <div class="time-block pull-left" style="">
+                <div class="oclock-wrapper">
+                    <img src="img/o'clock.png" alt="">
+                </div>
+                <div class="timer text-center">
+                    <span>20</span>
+                </div>
+            </div>
+            <div class="question-block-text pull-left">
+                <div class="alert alert-dark fz-18 flat-shadow text-center text-question"></div>
+                <div class="row mt-5 clearfix">
+                    <div class="col">
+                        <button type="button" class="btn-round btn-round-green ml-5 pull-left answer-true">
+                            <i class="fa fa-check"></i>
+                        </button>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn-round btn-round-red mr-5 pull-right answer-false">
+                            <i class="fa fa-close"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Start text-False&True-->
+        <div class="modal-answer overlay d-none">
+            <div class="questions-wrapper clearfix">
+                <h3 class="text-white text-uppercase fz-36 text-center">
+                    <i class="fa fz-42 fa-close red-text icon-answer"></i>
+                    <span class="title-answer"></span>
+                </h3>
+                <p class="text-answer text-white fz-18 text-center mt-5"></p>
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="col text-center mt-5">
+                        <button class="fz-36 btn btn-secondary btn-size btn-block next-answer">Продолжить</button>
+                    </div>
+                    <div class="col"></div>
+                </div>
+            </div>
+        </div>
+        <!--End text-False&True-->
+    </section>
+
+    <footer class="bg-img">
+        <img class="divider" src="img/divider.png" alt="">
+        <div class="text-center text-muted">
+            <p>&copy;2017 дизайнер Шолох Анастасия</p>
+            <span>Вы можете связаться со мной через социальние сети:</span>
+            <ul class="social m-0">
+                <li><a href="https://vk.com/id96355709" class="fa fa-vk text-light"></a></li>
+                <li><a href="" class="fa fa-facebook-square text-light"></a></li>
+                <li><a href="" class="fa fa-instagram text-light"></a></li>
+            </ul>
+        </div>
+    </footer>
+
+<script src="plugins/jQuery/jquery-3.1.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="plugins/bootstrap-4.0.0/js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/questions/questions.js"></script>
+<script src="js/game.js"></script>
+</body>
+</html>

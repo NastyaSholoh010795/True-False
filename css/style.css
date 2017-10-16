@@ -1,0 +1,313 @@
+/*Start common styles*/
+header{
+    height: 90px;
+    position: absolute;
+    width: 100%;
+    margin-bottom: -90px;
+}
+
+footer{
+    width: 100%;
+    height: 90px;
+    margin-top: -90px;
+}
+
+body, html{
+    height:100%;
+}
+
+html {
+    background-color: #34495e;
+}
+ul{
+    list-style-type: none;
+}
+
+ul.buttons-about-game{
+    position: absolute;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    height: 210px;
+    top: calc(50% - 105px);
+}
+
+section.section-min-height{
+    min-height: 100%;
+}
+
+button:focus{
+    outline: none !important;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.z-index-5{
+    z-index: 5;
+}
+
+.pb-footer{
+    padding-bottom: 90px
+}
+
+.pt-header{
+    padding-top: 90px;
+}
+
+.content-wrapper{
+    width: 33%;
+    margin: 0 auto;
+    padding-top: 10%;
+}
+
+.questions-wrapper{
+    width: 50%;
+    height: 30%;
+    padding-top: 15%;
+    margin: 0 auto;
+}
+
+.btn-size{
+    width: 300px;
+    padding: 0.8rem 0.75rem;
+}
+
+.center-block{
+    margin: 0 auto;
+}
+
+.fixed-btn-wrapper{
+    margin-bottom: 30px;
+}
+
+
+.fixed-btn{
+    border-top-left-radius: 0!important;
+    border-bottom-left-radius: 0!important;
+}
+
+.fz-42{
+    font-size: 42px;
+}
+
+.fz-36{
+    font-size: 36px !important;
+}
+.fz-24{
+    font-size:24px;
+}
+
+.fz-18{
+    font-size: 18px;
+}
+
+.red-text{
+    color: #ff0000;
+    padding-right: 10px;
+}
+
+.green-text{
+    color: #39b54a;
+    padding-right: 10px;
+}
+
+.yellow-text{
+    color: #ffff00;
+    padding-right: 10px;
+}
+
+.blue-text{
+    color: #00aeef;
+    padding-right: 10px;
+}
+
+.social{
+    display: inline-block;
+}
+.social li{
+    display: inline-block;
+    padding-right: 10px;
+}
+.social li a{
+    text-decoration: none;
+}
+
+.bg-img{
+    background: url("../img/green-triangle.jpg") no-repeat;
+}
+
+.divider{
+    width: 100%;
+    height: 2px;
+}
+
+.letter-spacing{
+    letter-spacing: 8px;
+}
+
+.flat-shadow{
+    box-shadow:
+            1px 1px #868e96,
+            2px 2px #868e96,
+            3px 3px #868e96,
+            4px 4px #868e96,
+            5px 5px #868e96,
+            6px 6px #868e96,
+            7px 7px #868e96;
+    -webkit-transform: translateX(-7px);
+    transform: translateX(-7px);
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: rgba(0,0,0,.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+/*End common styles*/
+
+
+/*Start main page*/
+.bwWrapper {
+    position:relative;
+    display:block;
+}
+
+.start-game-wrapper{
+    width: 220px;
+}
+
+.time-block{
+    width:20%;
+}
+
+.question-block-text{
+    width: 80%;
+}
+
+.text-question{
+    height: 200px;
+}
+
+/*End main page*/
+
+/*Start notice page*/
+
+.rules li{
+    margin-bottom: 20px;
+}
+
+/*End notice page*/
+
+/*Start question page*/
+.btn-round{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    font-size: 1.25rem;
+}
+.btn-round > .fa{
+    font-size: 48px;
+}
+
+.btn-round-green,.btn-round-red{
+    border: 10px solid #aeb4af;
+    background: #c7ccc2;
+    color: #a6a6a6;
+}
+
+
+
+.btn-round-green:hover{
+    border: 10px solid #238844;
+    background: #289f4c;
+    color: #1f7138;
+}
+
+.btn-round-red:hover{
+    border: 10px solid #a34237;
+    background: #be3f32;
+    color: #7f0b0f;
+}
+
+.oclock-wrapper img{
+    width: 50px;
+    position: relative;
+    left: 25px;
+}
+
+.timer{
+    border-radius: 50%;
+    border: 2px solid #00aeef;
+    width: 100px;
+    height: 100px;
+}
+
+.timer > span{
+    display: inline-block;
+    font-weight: bold;
+    font-size: 48px;
+    color: #f9e9b3;
+    height: 100%;
+    padding-top: 10%;
+}
+/*End question page*/
+
+/*Start level-up page*/
+
+.saljut > img{
+    width: 200px;
+}
+
+.level-up > span{
+    padding: 5px 30px;
+    border: 2px solid #fbaf5d;
+    border-radius: 50%;
+    color: transparent;
+    background: linear-gradient(to top, #c9595d, #63855e);
+    -webkit-background-clip: text;
+    font-size: 65px;
+}
+/*End level-up page*/
+
+/*Start end page*/
+
+.suljut-wrapper{
+    height: 645px;
+    width: 27.5%;
+}
+
+.winner-wrapper{
+    width: 45%;
+}
+
+.winner-wrapper > li, .loser-wrapper > li{
+    margin-bottom: 1.5rem;
+}
+
+.winner-wrapper > li:last-child, .loser-wrapper > li:last-child{
+    margin-bottom: 0;
+}
+
+.gold-cup-wrapper > img{
+    width: 250px;
+}
+
+.anew-wrapper > a > i:hover{
+    color: #566e84;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+/*End end page*/
+
+
+
+
